@@ -1,34 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strspn.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/05/31 12:34:22 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/06/01 11:57:05 by isainz-r         ###   ########.fr       */
+/*   Created: 2024/06/01 11:40:45 by isainz-r          #+#    #+#             */
+/*   Updated: 2024/06/01 12:07:33 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "functions.h"
 
-char	*ft_strchr(const char *s, int c)
+size_t	ft_strspn(const char *s, const char *accept)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
-	if ((char)c == '\0')
-		return ((char *) &s[all_len((char *)s)]);
-	while (s[i] != '\0')
+	while (s[i])
 	{
-		if (s[i] == (char)c)
-			return ((char *) &s[i]);
+		if (!ft_strchr(accept, s[i]))
+			return (i);
 		i++;
 	}
-	return (0);
+	return (i);
 }
 
-/*int	main(void)
+/*int main(void)
 {
-	printf("%s\n", ft_strchr("hola", 'l'));
+		printf("%zu", ft_strspn("holahola", "hoab"));
 }*/

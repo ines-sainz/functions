@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 15:39:39 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/05/30 15:47:10 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/06/01 11:26:07 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	rev_print(int argc, char **argv)
 	len = 0;
 	if (argc == 2)
 	{
-		len = strlen_with_null(argv[1]);
+		len = all_len(argv[1]);
 		while (len >= 0)
 		{
 			write(1, &argv[1][len], 1);

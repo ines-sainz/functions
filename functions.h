@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/30 10:05:31 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/05/31 14:43:03 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/06/01 11:55:39 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,11 +36,13 @@ void    do_op(char *first_number, char *sign, char *second_number);
 int		ft_strcmp(char *s1, char *s2);
 size_t	ft_strcspn(const char *s, const char *reject);
 char	*ft_strpbrk(const char *s1, const char *s2);
+char	*ft_strrev(char *str);
+size_t	ft_strspn(const char *s, const char *accept);
 
 void	ft_putnbr(int number);
 int		ft_atoi(const char *str);
 char	*ft_strchr(const char *s, int c);
 
-int		strlen_with_null(char *str);
+int		all_len(char *str);
 
 #endif
