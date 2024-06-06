@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 11:39:40 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/05/31 12:11:31 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/06/03 15:25:49 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ void	do_op(char *first_number, char *sign, char *second_number)
 
 	number1 = ft_atoi(first_number);
 	number2 = ft_atoi(second_number);
-
 	if (sign[0] == '+')
 		result = number1 + number2;
 	if (sign[0] == '-')

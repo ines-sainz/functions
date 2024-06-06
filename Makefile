@@ -6,7 +6,7 @@
 #    By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/30 11:11:56 by isainz-r          #+#    #+#              #
-#    Updated: 2024/06/01 11:54:56 by isainz-r         ###   ########.fr        #
+#    Updated: 2024/06/06 09:04:51 by isainz-r         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,9 @@ ARFLAGS		= -rcs
 SRCS =	first_word.c fizzbuzz.c ft_putstr.c ft_strcpy.c ft_swap.c rot_13.c \
 		repeat_alpha.c rev_print.c rotone.c search_and_replace.c ulstr.c \
 		alpha_mirror.c camel_to_snake.c do_op.c ft_strcmp.c ft_strcspn.c \
-		ft_strpbrk.c ft_strrev.c ft_strspn.c\
+		ft_strpbrk.c ft_strrev.c ft_strspn.c inter.c is_power_of_2.c \
+		last_word.c max.c print_bits.c reverse_bits.c swap_bits.c \
+		snake_to_camel.c ft_union.c wdmatch.c \
 		ft_putnbr.c ft_atoi.c ft_strchr.c \
 		all_len.c \
 

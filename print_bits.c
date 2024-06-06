@@ -1,42 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   inter.c                                            :+:      :+:    :+:   */
+/*   print_bits.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/01 12:09:41 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/06/05 17:12:58 by isainz-r         ###   ########.fr       */
+/*   Created: 2024/06/03 16:53:52 by isainz-r          #+#    #+#             */
+/*   Updated: 2024/06/03 17:24:18 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "functions.h"
 
-void	inter(int argc, char **argv)
+void	print_bits(unsigned char octet)
 {
 	int	i;
-	int	j;
+	int	bit;
 
-	i = 0;
-	if (argc == 3)
+	i = 8;
+	while (i--)
 	{
-		while (argv[1][i])
-		{
-			if (ft_strchr(argv[2], argv[1][i]))
-			{
-				j = 0;
-				while (argv[1][j] && argv[1][i] != argv[1][j])
-					j++;
-				if (j == i)
-					write(1, &argv[1][i], 1);
-			}
-			i++;
-		}
+		bit = (octet >> i & 1) + '0';
+		write(1, &bit, 1);
 	}
-	write(1, "\n", 1);
 }
 
-/*int	main(int argc, char **argv)
+/*int main(void)
 {
-		inter(argc, argv);
+		print_bits(2);
 }*/

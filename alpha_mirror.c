@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 10:46:00 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/05/31 11:27:05 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/06/03 15:25:19 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	alpha_mirror(int argc, char **argv)
 			else if (argv[1][i] >= 'A' && argv[1][i] <= 'M')
 				argv[1][i] = 90 - (argv[1][i] - 65);
 			else if (argv[1][i] >= 'N' && argv[1][i] <= 'Z')
-				argv[1][i] =  65 + (90 - argv[1][i]);
+				argv[1][i] = 65 + (90 - argv[1][i]);
 			write(1, &argv[1][i], 1);
 			i++;
 		}

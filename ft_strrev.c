@@ -6,7 +6,7 @@
 /*   By: isainz-r <isainz-r@student.42madrid>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/31 14:44:32 by isainz-r          #+#    #+#             */
-/*   Updated: 2024/06/01 11:21:33 by isainz-r         ###   ########.fr       */
+/*   Updated: 2024/06/03 15:39:29 by isainz-r         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,8 +32,8 @@ char	*ft_strrev(char	*str)
 	return (str);
 }
 
-int	main(void)
+/*int	main(void)
 {
 	char	str[] = "hola que tal";
 	printf("%s", ft_strrev(str));
-}
+}*/
